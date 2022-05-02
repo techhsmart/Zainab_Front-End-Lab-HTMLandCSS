@@ -1,0 +1,74 @@
+body {
+    margin: 0%;
+    height: auto;
+}
+
+header {
+    text-align: right;
+    background-color: red;
+    padding: 15px;
+    padding-right: 10%;
+    margin-bottom: 0%;
+}
+
+.navbar {
+    background-color: rgb(40, 40, 40);
+    position: sticky;
+    z-index: 1;
+}
+
+.menu {
+    margin: 0%;
+    padding: 5px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0%;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0%;
+}
+
+.menu>li>a:hover {
+    background-color: black;
+}
+
+.menu>li:first-child {
+    margin-left: 10%;
+}
+
+.menu li:nth-child(2):hover #dropDown1 {
+    display: block;
+}
+.menu li:nth-child(3):hover #dropDown2 {
+    display: block;
+}
+
+#dropDown1 li, #dropDown2 li {
+    display: block;
+}
+
+#dropDown1 li a, #dropDown2 li a {
+    color: black;
+}
+
+#dropDown1 li:hover, #dropDown2 li:hover {
+    background-color: gray;
+}
+
+#dropDown1, #dropDown2 {
+    position: absolute;
+    width: auto;
+    max-width: 150;
+    display: none;
+    top: 100%;
+    background-color: gainsboro;
+    padding: 0%;
+}
+
